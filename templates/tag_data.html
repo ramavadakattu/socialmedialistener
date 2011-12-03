@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+ Social Media Listener --SkunkWorks
+{% endblock %}
+
+
+{% block content %}
+
+ {% include "header.html" %}
+
+<div  id="rightbox">
+    
+    
+    
+    
+    
+    
+      {% include "social_mediabox.html" %}
+    
+</div>
+
+
+<div id="leftbox">
+
+<div class="attentionbox">  <h2>  Popular items related to tag "{{ntag}}" </h2> </div>
+
+<ul class="bigdataholder">
+{% for popularentry in entries %}
+
+    {% include "temp.html" %}
+{% endfor %}
+</ul>
+
+</div>
+
+
+
+{% endblock %}

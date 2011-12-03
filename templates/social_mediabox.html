@@ -1,0 +1,64 @@
+<p> Total items shared </p> 
+<div id="sharecountbox">   <span id="sharecountspan"> {{totalentries}}  </span>
+<!-- <img  src="{{ MEDIA_URL }}ajax-loader.gif"  alt="twitter"  />  --> </div>
+
+<br/>
+
+<h2> Trending topics </h2>
+    <table  id="trendingtable">
+    
+      {% for topic in trendingtopics %}
+      <tr>
+        <td>
+             <a href="{% url tagstoriesurl topic.id %}">   {{topic.name}}   </a>  <br/>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br/>
+    <br/>
+
+
+<h2>  Social Media Sites </h2>
+    
+    <table id="socialmedia">
+        
+       
+        <tr>
+            <td>
+                 <img  src="{{ MEDIA_URL }}readerbig.gif"  alt="twitter"  /> 
+                
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                 <img  src="{{ MEDIA_URL }}deliciousbig.png"  alt="twitter"  /> 
+            </td>
+        </tr>
+        
+        <tr>
+            
+           <td>
+            
+             <img  src="{{ MEDIA_URL }}facebookbig.jpeg"  alt="twitter"  /> 
+            
+            
+           </td>
+           
+           
+            
+        </tr>
+        
+         <tr>
+            <td>
+                 <img  src="{{ MEDIA_URL }}twitterbig.png"  alt="twitter"  /> 
+            </td>
+            
+        </tr>
+        
+        
+        
+    </table>    
+    
+    

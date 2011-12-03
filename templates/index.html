@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+ Social Media Listener --SkunkWorks
+{% endblock %}
+
+
+{% block content %}
+
+ {% include "header.html" %}
+
+
+<div  id="rightbox">
+    
+  
+  
+  
+   
+    
+     {% include "social_mediabox.html" %}
+    
+    
+</div>    
+
+
+
+<div id="leftbox">
+
+<div class="attentionbox"> <h2> What user's are talking about eBay and Paypal ? </h2>  </div>
+
+
+{% if popularentries.has_next or popularentries.has_previous %}
+              
+          {% endif %}
+       
+         {% if popularentries.has_next %}
+            <a href="{% url popularurl2  popularentries.next_page_number %}">  Previous popular stories </a>  &nbsp; &nbsp;              
+         {% endif %}
+        
+         {% if popularentries.has_previous %}
+          <a href="{% url popularurl2   popularentries.previous_page_number %}">   Next </a>
+         {% endif %}
+         
+         {% if popularentries.has_next or popularentries.has_previous %}
+             <br/>  
+          {% endif %}
+ 
+ 
+ 
+
+
+ {% if popularentries.object_list %}
+     
+     
+       
+       <ul  class="bigdataholder"> 
+       {% for popularentry in popularentries.object_list %}
+       
+          {% include "temp.html" %}
+
+       {% endfor %}
+       
+       <ul>
+ 
+      
+       
+       
+    {% else %}
+    
+    
+     {% ifequal popularentries.number 1 %}
+              At present there are no popular stories.
+      {% endifequal %}
+      
+      
+      {% ifnotequal popularentries.number 1 %}
+              No more popular stories.
+      {% endifnotequal %}
+      
+              
+     
+    
+    {% endif %}
+    
+    
+    
+    
+    {% if popularentries.has_next or popularentries.has_previous %}
+               <br/> 
+          {% endif %}
+       
+         {% if popularentries.has_next %}
+            <a href="{% url popularurl2  popularentries.next_page_number %}">  Previous popular stories </a>  &nbsp; &nbsp;              
+         {% endif %}
+        
+         {% if popularentries.has_previous %}
+          <a href="{% url popularurl2   popularentries.previous_page_number %}">   Next </a>
+         {% endif %}
+         
+    </div>
+
+ 
+
+
+{% endblock %}

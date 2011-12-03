@@ -1,0 +1,244 @@
+body{
+ 
+font-family: 'Lucida Grande',Verdana,sans-serif;
+font-size: 12px;
+
+vertical-align: baseline;
+letter-spacing: normal;
+word-spacing: normal;
+margin-left : 5px;
+color : #5E5E5E;
+
+}
+
+h2,h3,ul,li,div{
+	
+	margin : 0px;
+	padding : 0px;
+	
+}
+
+h2,h3{
+	
+	
+}
+
+
+
+
+
+	a:link {    color :  #00638D;    text-decoration:none;      }    /* Unvisited links */
+    a:visited  { text-decoration : none; color :  #00638D;     }  /*   visited link */
+    a:hover {  text-decoration : underline; color : #45A100;   }   /* mouse over link  */
+								     
+  
+
+div.attentionbox
+{
+ 
+  
+  padding-top : 10px;
+  padding-bottom : 10px;
+  margin-top : 10px;
+  margin-bottom : 5px;
+	  
+
+}
+
+
+
+div.attentionbox h2{
+	
+	font-size : 180%;
+	
+}
+
+ul{
+	
+	list-style-type : none;
+	
+}
+
+ul li {
+
+	
+	
+	
+}
+
+h3{
+	font-size : 90%;
+}
+
+td.sharesbox
+{
+	
+	padding : 8px;
+      
+	
+	/*background-color:#F3F1D9;
+	border:1px solid #C5B849; */
+	background-color:#E9F4FF;
+	border:1px solid #AACCEE;
+	text-align : center;
+	
+	
+}
+
+span.domain
+{
+	
+	font-size : 12px;
+}
+
+span.biggerfont
+{
+	font-size : 18px;
+	font-weight : bold;
+	
+	
+	
+}
+table
+{
+	
+        margin-top : 8px;
+	
+	padding-bottom : 8px;
+}
+
+table.first
+{
+	
+	margin-top : 10px;
+}
+
+
+span.description
+{
+	
+	font-size : 13px;
+	
+	padding-top : 5px;
+}
+
+td.secondbox
+{
+	
+	padding : 10px;
+}
+
+td.secondbox h3{
+	
+	
+	
+}
+
+
+#leftbox
+{
+	margin-right : 25%;
+	
+}
+
+#socialmedia
+{
+  border-collapse : collapse;
+  
+	
+}
+
+#socialmedia td{
+	
+	padding : 5px;
+	padding-left : 0px;
+}
+
+
+#rightbox
+{
+   width : 24%;
+   float :right;
+   margin-top: 18px;
+   background-color : #ffffff;
+}
+#rightbox h2{
+	
+}
+
+#trendingtable
+{
+	font-size : 12px;
+	border-collapse : collapse;
+	border-bottom : 0px dashed white;
+}
+
+span.bigfont
+{
+	font-size : 120%;
+	
+	
+}
+
+#sharecountbox
+{
+
+ margin : 0px;
+ 
+ font-size : 300%;
+
+ line-height : normal;
+	
+}
+p{
+	
+	margin-bottom : 0px;
+	margin-top :0px;
+}
+
+#trendingtable td{
+	
+	
+	padding : 5px;
+	border-bottom : 1px dotted #CCCCCC;
+}
+
+li.anentry{
+	border-bottom : 1px dotted #999999;
+	
+}
+
+img
+{
+	border : 0px;
+}
+
+
+#headerbox
+{
+	
+	
+	
+	
+}
+
+
+
+h2.sharecountbox
+{
+background-color : #ffffff;	
+	
+}
+
+.pureyellow{
+	
+	background-color : yellow;
+
+}
+
+.purewhite{
+	
+	background-color : white;
+
+}
+

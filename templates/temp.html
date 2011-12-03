@@ -1,0 +1,81 @@
+
+{% load humanize %}
+
+<li  class="anentry">
+        
+        {% if  forloop.first  %}
+<table class="first">
+        {% else %}
+<table>        
+        {% endif %}
+        <tr>
+            
+            
+            <td  class="sharesbox">
+                
+            <span class="biggerfont">  {{  popularentry.noofshares }}  </span> <br/>
+             <span class="domain">   shares </span>
+            </td>
+
+                <td  class="secondbox">
+       
+       
+       
+                                    
+                                    {% if  forloop.first  %}
+                                          <ul class="first">  
+                                     {% else %}        
+                                           <ul>  
+                                        {% endif %}
+                                    
+                                     
+                                      <li class="head">
+                                         
+                                      
+                                         
+                                     <h3>  <a href="{{popularentry.url}}"  target="_blank"> {{  popularentry.getNeatTitle|safe }}   </a>
+                                     
+                                     &nbsp; 
+                                      
+                                     
+                                        
+                                        </h3>
+                                    
+                                <!--     <h3> Html title :  {{popularentry.htmltitle}} </h3>  -->
+                                  
+                                      </li>
+                                      <li>
+                                      <span class="description">   ({{ popularentry.getDomainName }}) &nbsp;  
+                                      
+                                      {{ popularentry.deliciouscount }}
+                                      <img  src="{{ MEDIA_URL }}delicious.png"  alt="delicious"  /> &nbsp;
+                                      {{ popularentry.twittercount }}
+                                      <img  src="{{ MEDIA_URL }}twitter.png"  alt="twitter"  /> &nbsp;
+                                      {{ popularentry.readercount }}
+                                      <img  src="{{ MEDIA_URL }}google.png"  alt="google"  />  &nbsp;
+                                      {{ popularentry.facebookcount }}
+                                      <img  src="{{ MEDIA_URL }}facebook.png"  alt="facebook"  />  &nbsp;
+                                      
+                                      &nbsp; &nbsp;
+                                      
+                                      {{popularentry.entry_createdon|timesince}} ago
+                                       </span>
+                                      {% if popularentry.description %}
+                                      <!--  <span class="description">   {{popularentry.description}}  </span>  -->
+                                      {% endif %}
+                                     
+                                      
+                                      </li>
+                                    
+                                    
+                                      
+                                    </ul>
+              
+              </td>
+                
+                
+        </tr>
+         
+       </table>
+</li>
+      

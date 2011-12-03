@@ -1,0 +1,7 @@
+
+Term  extraction
+1) easy_install topia.termextract
+
+
+langugage detection tool
+2) easy_install oice.langdet
